@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Homepage from './Components/HomePage/Homepage';
+import WhyChoose from './Components/Whychoose/Whychoose';
+import Services from './Components/Services/Services';
+import Team from './Components/Team/Team';
+import CTASection from './Components/CTASection/CTASection';
+import Footer from './Components/Footer/Footer';
+import RecentNews from './Components/RecentNews/RecentNews';
+
+
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Homepage/>
+    <WhyChoose/>
+    
+    <Services/>
+    <Team/>
+    <CTASection/>
+    <RecentNews/>
+    <Footer/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
